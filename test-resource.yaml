@@ -1,0 +1,11 @@
+apiVersion: my.domain/v1
+kind: Test
+metadata:
+  name: first-test
+spec:
+  slackChannels: "#flywheel"
+  queryNamespace: default
+  queryResources: pods
+  queryTime: "0 8 * * *"
+  ageThreshold: 48
+  
